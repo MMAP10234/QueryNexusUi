@@ -1,10 +1,18 @@
 
-
-const App = () => {
-  return (
-    <div className="text-amber-300 text-4xl">QueryNexus
+import { BrowserRouter,Routes,Route} from "react-router-dom" 
+import Auth from "./Components/Auth"
+const  App :React.FC= () => {
+ 
+  return (<BrowserRouter>
+<Routes>
+  <Route path='/' element={<Auth/>}></Route>
+</Routes>
+  </BrowserRouter>
+  
+   
+    
       
-    </div>
+   
   )
 }
 
